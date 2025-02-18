@@ -11,8 +11,10 @@ for (let index = 0; index < 200; index++) {
       });
 }*/
 
-for (let index = 0; index < 2009876543; index++) {
+/*for (let index = 0; index < 2009876543; index++) {
 const { exec } = require('child_process')
-exec('start calc');
+exec('start calc');*/
 /*`test`;*/
-}
+//}
+
+console.log([]==![])
