@@ -1,5 +1,5 @@
 /*Exo Count*/
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -67,7 +67,7 @@ body {
 .minus {
   margin-right: -20px;
   z-index: 1;
-}
+}*/
 
 
 
@@ -163,7 +163,7 @@ p {
 
 
 /*Exo Contact*/
-/* * {
+* {
   box-sizing: border-box;
 }
 
@@ -222,7 +222,7 @@ main {
 .card .favorite-button:active {
   transform: none;
   box-shadow: none;
-}*/
+}
 
 /*Exo Gestion stat*/
 /* * {

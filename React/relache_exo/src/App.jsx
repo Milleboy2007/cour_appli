@@ -1,20 +1,21 @@
 //Exo Count
-import { useState } from "react";
+/*import { useState } from "react";
 
 export default function App1() {
   const [count, setCount] = useState(0);
 
   function add() {
-    setCount(count + 1);
+    setCount(prevCount => prevCount + 1);
   }
 
   function subtract() {
-    setCount(count - 1);
+    setCount(prevCount => prevCount - 1);
   }
 
   return (
     <main className="container">
       <h1>
+
         Combien de fois mon enseignant va-t-il dire le mot state dans ce
         chapitre ?
       </h1>
@@ -36,7 +37,7 @@ export default function App1() {
       </div>
     </main>
   );
-}
+}*/
 
 
 
@@ -66,26 +67,20 @@ export default function App() {
 
 
 //Exo Tableau
-/*import { useState } from "react";
+/*import { useState } from "react"
 
 export default function App() {
-  const allFavoriteThings = ["💦🌹", "😺", "💡🫖", "🔥🧤", "🟤🎁", 
-  "🐴", "🍎🥧", "🚪🔔", "🛷🔔", "🥩🍝"];
 
-  const [myFavoriteThings, setMyFavoriteThings] = useState([]);
+  const [myFavoriteThings, setMyFavoriteThings] = useState([])
+
+  const allFavoriteThings = ["💦🌹", "😺", "💡🫖", "🔥🧤", "🟤🎁", 
+  "🐴", "🍎🥧", "🚪🔔", "🛷🔔", "🥩🍝"]
+  const thingsElements = myFavoriteThings.map(thing => <p key={thing}>{thing}</p>)
 
   function addFavoriteThing() {
-    // On ajoute un nouvel élément du tableau allFavoriteThings à chaque clic
-    if (myFavoriteThings.length < allFavoriteThings.length) {
-      const nextThing = allFavoriteThings[myFavoriteThings.length];
-      setMyFavoriteThings([...myFavoriteThings, nextThing]);
-    }
+    setMyFavoriteThings(preMyFavoriteThings => [...preMyFavoriteThings,allFavoriteThings[preMyFavoriteThings.length] ])
   }
-
-  const thingsElements = myFavoriteThings.map((thing, index) => (
-    <p key={index}>{thing}</p>
-  ));
-
+  
   return (
     <main>
       <button onClick={addFavoriteThing}>Add item</button>
@@ -93,20 +88,20 @@ export default function App() {
         {thingsElements}
       </section>
     </main>
-  );
+  )
 }*/
 
 
 //Exo Contact
-/*import { useState } from "react"
+import { useState } from "react"
 import avatar from "./images/user.png"
 import starFilled from "./images/star-filled.png"
 import starEmpty from "./images/star-empty.png"
 
 export default function App() {
     const [contact, setContact] = useState({
-        firstName: "John",
-        lastName: "Doe",
+        firstName: "Jo",
+        lastName: "Dalton",
         phone: "+1 (514) 555-1212",
         email: "itsmyrealname@example.com",
         isFavorite: false
@@ -117,7 +112,7 @@ export default function App() {
         setContact(prevContact => ({
             ...prevContact,
             isFavorite: !prevContact.isFavorite 
-        }));
+        }))
     }
 
     return (
@@ -150,7 +145,7 @@ export default function App() {
             </article>
         </main>
     )
-}*/
+}
 
 //Exo Gestion State
 /*import { useState } from "react"
