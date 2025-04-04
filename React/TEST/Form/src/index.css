@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{ 
+  background-color: #2CA1CC;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius:5px;
+  color: #1F1F1F;
+}
+
+.container h2 {
+  padding: 20px; 
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 40px 0;
+}
+
+.form input {
+  margin: 10px 0 20px;
+  padding: 10px;
+  width:90%;
+  background-color: #EAEDF2;
+  border: none;
+  border-radius:3px;
+  color:#A0A0A0;
+}
+
+.form textarea {
+  resize: none;
+  margin: 10px 0 20px;
+  padding: 10px;
+  width:90%;
+  height: 15vh;
+  background-color: #EAEDF2;
+  border: none;
+  border-radius:3px;
+  color:#A0A0A0;
+}
+
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 10px 0;
+}
+
+.form fieldset legend {
+  margin-bottom: 5px;
+}
+
+.form fieldset input {
+  width:fit-content;
+  margin: 10px 10px 7px 2px;
+}
+.form fieldset label {
+  width:fit-content;
+}
+
+
+.form .submit-btn {
+  border:none;
+  padding: 10px;
+  border-radius:5px;
+  color:#F7F6FF;
+  cursor: pointer;
+  width: 96%;
+  margin-bottom:10px;
+  margin-top: 20px;
+  background-color: #19B8D6;
+  height: 37px;
+}
