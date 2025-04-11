@@ -1,7 +1,8 @@
 //Exo Count
 /*import { useState } from "react";
+import Count from "./components/Count"
 
-export default function App1() {
+export default function App() {
   const [count, setCount] = useState(0);
 
   function add() {
@@ -29,7 +30,7 @@ export default function App1() {
           –
         </button>
 
-        <h2 className="count">{count}</h2>
+        <Count count = {count}/>
 
         <button className="plus" aria-label="Increase count" onClick={add}>
           +
@@ -95,8 +96,8 @@ export default function App() {
 //Exo Contact
 import { useState } from "react"
 import avatar from "./images/user.png"
-import starFilled from "./images/star-filled.png"
-import starEmpty from "./images/star-empty.png"
+import Star from "./components/Star"
+
 
 export default function App() {
     const [contact, setContact] = useState({
@@ -124,17 +125,12 @@ export default function App() {
                     alt={"Photo de profil de " + contact.firstName + " " + contact.lastName}
                 />
                 <div className="info">
-                    <button
-                        onClick={toggleFavorite}
-                        aria-pressed={contact.isFavorite}
-                        className="favorite-button"
-                    >
-                        <img
-                            src={contact.isFavorite ? starFilled : starEmpty}
-                            alt={"icône étoile " + contact.isFavorite ? "plein":"vide"}
-                            className="favorite"
+                    
+                        <Star 
+                          isFilled = {contact.isFavorite}
+                          toggleFavorite = {toggleFavorite}
                         />
-                    </button>
+                    
                     <h2 className="name">
                         {contact.firstName + " " + contact.lastName}
                     </h2>
